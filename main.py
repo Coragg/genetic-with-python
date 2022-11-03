@@ -4,7 +4,7 @@ import os
 def read_file(path_and_name_file: str):
     """reading the input file and display the characters from the text, for create a list with every character
     param str path_and_name_file
-    return a list of the characters of the file or None"""
+    return a list of the characters of the file or close the program"""
     try:
         data: list = []
         with open(path_and_name_file, "r", encoding="utf-8") as file:
@@ -34,8 +34,8 @@ def look_for_adenines(list_data: list):
     param list lista_data
     return true or false """
     count: int = 0
-    for characters in list_data:
-        if characters == 'a':
+    for proteins in list_data:
+        if proteins == 'a':
             count += 1
             if count >= 2:
                 return True
