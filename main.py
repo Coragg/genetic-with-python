@@ -75,6 +75,7 @@ def look_for_guanines(protein_list: list):
 
 
 def checks_mutant_or_human(proteins_list: list):
+    # say if you are a mutant or human
     if look_for_thymine(proteins_list) is True and look_for_guanines(proteins_list) and \
             (look_for_adenines(proteins_list) is True or look_for_cytokines(proteins_list) is True):
         print("Mutant")
